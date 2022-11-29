@@ -311,5 +311,5 @@ int retira_um_elemento_cjt (conjunto_t *c){
     c->v[c->card] = 0;
     c->card = c->card - 1;
 
-    return c->v[c->card-1];
+    return c->v[c->card];
 }
