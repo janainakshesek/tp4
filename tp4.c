@@ -4,8 +4,14 @@
 #define MAX 100
 
 
-conjunto_t *ler_herois(conjunto_t *c){
-    
+int ler_herois(conjunto_t *c){
+
+    int num;
+
+    while(num != 0){
+        insere_cjt(c, num);
+        scanf("%d", &num);
+    }    
 }
 
 
@@ -28,7 +34,9 @@ int main ()
     herois = cria_cjt(MAX);
 
     /* ler os herois e suas habilidades */
-
+    
+    ler_herois(herois);
+    realloc(herois);
 
     /* ler a missao */
     while(num != 0){
